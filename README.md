@@ -16,7 +16,7 @@ Calculadora simples e funcional desenvolvida com **HTML, CSS e JavaScript**, uti
 
 ## 🖼️ Preview
 
-> 💡 Você pode adicionar uma imagem/gif aqui futuramente
+![Preview da Calculadora](./calculator.png)
 
 ---
 
