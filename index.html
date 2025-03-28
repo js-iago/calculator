@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="top-display">
+            <span id="current-input"></span>
+        </div>
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <!-- Primeira linha -->
+            <button class="btn operator-secondary" onclick="setOperator('%')">%</button>
+            <button class="btn operator-secondary" onclick="clearAll()">CE</button>
+            <button class="btn operator-secondary" onclick="clearDisplay()">C</button>
+            <button class="btn operator-secondary" onclick="clearOneChar()">
+                <i class="fa-solid fa-delete-left"></i>
+            </button>
+
+            <!-- Segunda linha -->
+            <button class="btn operator-secondary" onclick="setOperator('1/x')">1/x</button>
+            <button class="btn operator-secondary" onclick="setOperator('^2')">x²</button>
+            <button class="btn operator-secondary" onclick="setOperator('√')">√</button>
+            <button class="btn operator-main" onclick="setOperator('/')">/</button>
+
+            <!-- Terceira linha -->
+            <button class="btn num-btn" onclick="appendNumber(7)">7</button>
+            <button class="btn num-btn" onclick="appendNumber(8)">8</button>
+            <button class="btn num-btn" onclick="appendNumber(9)">9</button>
+            <button class="btn operator-main" onclick="setOperator('*')">*</button>
+
+            <!-- Quarta linha -->
+            <button class="btn num-btn" onclick="appendNumber(4)">4</button>
+            <button class="btn num-btn" onclick="appendNumber(5)">5</button>
+            <button class="btn num-btn" onclick="appendNumber(6)">6</button>
+            <button class="btn operator-main" onclick="setOperator('-')">-</button>
+
+            <!-- Quinta linha -->
+            <button class="btn num-btn" onclick="appendNumber(1)">1</button>
+            <button class="btn num-btn" onclick="appendNumber(2)">2</button>
+            <button class="btn num-btn" onclick="appendNumber(3)">3</button>
+            <button class="btn operator-main" onclick="setOperator('+')">+</button>
+
+            <!-- Sexta linha -->
+            <button class="btn operator-secondary" onclick="setOperator('±')">±</button>
+            <button class="btn num-btn" onclick="appendNumber(0)">0</button>
+            <button class="btn num-btn" onclick="appendDecimal()">.</button>
+            <button class="btn operator-secondary" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

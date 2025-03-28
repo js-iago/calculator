@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e5ec;
+    /* Cor de fundo suave para o estilo Neumorphism */
+}
+
+.calculator {
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+    /* Sombra interna e externa */
+    padding: 40px;
+    position: relative;
+    width: 380px;
+    /* Aumentando a largura da calculadora */
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #e0e5ec;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0.7);
+    /* Sombras internas */
+    color: #333;
+    white-space: nowrap;
+    /* Impede a quebra de linha */
+    overflow-x: auto;
+    /* Adiciona rolagem horizontal se necessário */
+    text-overflow: ellipsis;
+    /* Adiciona reticências se o texto for muito longo */
+}
+
+.top-display {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 0.8em;
+    color: #888;
+    white-space: nowrap;
+    overflow-x: auto;
+    max-width: calc(100% - 40px);
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: #e0e5ec;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.7);
+    /* Sombras para efeito de botão embutido */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    height: 60px;
+    /* Ajustando altura fixa */
+    width: 60px;
+    /* Ajustando largura fixa */
+}
+
+.btn:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.operator-main {
+    background-color: #ff9f00;
+    /* Cor amarela para operadores principais */
+    color: white;
+}
+
+.operator-main:hover {
+    background-color: #e68a00;
+    /* Tom mais escuro ao passar o mouse */
+}
+
+.operator-secondary {
+    background-color: #ffcc33;
+    /* Amarelo mais suave para outros operadores */
+    color: white;
+}
+
+.operator-secondary:hover {
+    background-color: #e6b800;
+    /* Tom mais escuro ao passar o mouse */
+}
+
+.num-btn {
+    background-color: white;
+    /* Fundo branco para botões numéricos */
+    color: #333;
+    /* Cor escura para os números */
+}
+
+.num-btn:hover {
+    background-color: #f1f1f1;
+    /* Efeito de hover com fundo mais claro */
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.operator-main:active {
+    transform: scale(0.95);
+}
+
+.operator-secondary:active {
+    transform: scale(0.95);
+}
