@@ -27,7 +27,7 @@ body {
 
 #display {
     width: 100%;
-    height: 60px;
+    height: 90px;
     font-size: 2em;
     text-align: right;
     padding: 10px;
@@ -86,28 +86,31 @@ body {
     box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
 }
 
+/* Cor para operadores principais */
 .operator-main {
-    background-color: #ff9f00;
-    /* Cor amarela para operadores principais */
+    background-color: #115E59;
+    /* Novo tom mais escuro */
     color: white;
 }
 
 .operator-main:hover {
-    background-color: #e68a00;
+    background-color: #0a4a3e;
     /* Tom mais escuro ao passar o mouse */
 }
 
+/* Cor para operadores secundários */
 .operator-secondary {
-    background-color: #ffcc33;
-    /* Amarelo mais suave para outros operadores */
-    color: white;
+    background-color: #99F6E4;
+    /* Novo tom mais claro */
+    color: #333;
 }
 
 .operator-secondary:hover {
-    background-color: #e6b800;
+    background-color: #7dd7c8;
     /* Tom mais escuro ao passar o mouse */
 }
 
+/* Cor para botões numéricos */
 .num-btn {
     background-color: white;
     /* Fundo branco para botões numéricos */
